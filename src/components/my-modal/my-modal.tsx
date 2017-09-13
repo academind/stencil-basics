@@ -1,12 +1,4 @@
-import {
-    Component,
-    Method,
-    Element,
-    Prop,
-    State,
-    Event,
-    EventEmitter
-} from '@stencil/core';
+import { Component, Method, Element, Prop, State } from '@stencil/core';
 
 @Component({
     tag: 'my-modal',
@@ -22,17 +14,14 @@ export class MyModal {
 
     @State() showOptions = false;
 
-    @Event() onClose: EventEmitter;
-
     @Method()
     open() {
         this.modalEl.style.display = 'block';
     }
 
     closeModalHandler() {
-        // this.modalEl.style.display = 'none';
+        this.modalEl.style.display = 'none';
         this.showOptions = false;
-        this.onClose.emit();
     }
 
     showOptionsHandler() {
