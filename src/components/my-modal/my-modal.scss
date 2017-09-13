@@ -1,0 +1,11 @@
+my-modal {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+    background-color: white;
+    position: fixed;
+    top: 30%;
+    width: 350px;
+    left: calc(50% - 175px);
+    z-index: 1000;
+}
