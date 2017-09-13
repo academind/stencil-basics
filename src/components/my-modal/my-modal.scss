@@ -8,4 +8,14 @@ my-modal {
     width: 350px;
     left: calc(50% - 175px);
     z-index: 1000;
+    padding: 16px;
+
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font: inherit;
+        cursor: pointer;
+        color: #fa923f;
+    }
 }

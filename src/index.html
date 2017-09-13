@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
@@ -15,10 +16,20 @@
   <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
 
 </head>
+
 <body>
 
-  <my-backdrop></my-backdrop>
-  <my-modal></my-modal>
+  <button>Open Modal</button>
 
+  <my-modal-bundle title="Info" content="This is an important information!"></my-modal-bundle>
+  <script>
+    var btn = document.querySelector('button');
+    var modal = document.querySelector('my-modal-bundle');
+    btn.addEventListener('click', function () {
+      // modal.style.display = 'block';
+      modal.open();
+    });
+  </script>
 </body>
+
 </html>
